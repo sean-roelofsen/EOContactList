@@ -1,67 +1,195 @@
 <!DOCTYPE html>
+
 <html>
- <meta charset=utf-8 />
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0">
+<head>
+<title>HP ECO Contact List</title>
+<link href="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px; /* Slightly increased body font size */
+        }
+        h2 {
+            font-size: 16px; /* Slightly decreased title font size */
+            line-height: 1.0; /* Decreased space between lines */
+        }
+        .contact-table {
+            width: 100%;
+            text-align: left;
+        }
+        .contact-row {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            border-bottom: 1.5px solid #ddd;
+            justify-content: space-between;
+        }
+        .contact-cell {
+            flex: 1;
+        }
+        .icon-container {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .icon {
+            margin-right: 40px; /* Further increased spacing */
+            cursor: pointer;
+            font-size: 1.5em; /* Extra large icons */
+        }
+        .extra-info {
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto the next line */
+        }
+        .extra-info h3 {
+            width: 100%; /* Full width to ensure it's on its own line */
+        }
+        .extra-info p {
+            margin: 5px 0;
+            flex: 1 1 50%; /* Flex grow, shrink, and basis set to 50% */
+        }
 
-  
+        @media screen and (max-width: 768px) {
+            .contact-cell {
+                font-size: 14px;
+            }
+            .icon-container {
+                flex-basis: 100%;
+                justify-content: flex-end; /* Right-justify icons on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+<h2><u>HP ECO Contacts (click to send)</u></h2>
+<div class="contact-table">
+<!--<a href="{{ url_for('add_contact') }}">Add New Contact</a>-->
+<div class="contact-row" id="contact_1">
+<div class="contact-cell">Vincent Bulman - Supervisor</div>
+<div class="icon-container">
+<a class="icon" href="mailto:vincent.bulman@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:4169917809"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:vincent.bulman@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<!-- Repeat for each contact -->
+<div class="contact-row" id="contact_2">
+<div class="contact-cell">Christelle Broux</div>
+<div class="icon-container">
+<a class="icon" href="mailto:christelle.broux@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:2892085057"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:christelle.broux@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_3">
+<div class="contact-cell">Elizabeth Hughes</div>
+<div class="icon-container">
+<a class="icon" href="mailto:elizabeth.hughes2@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:2892081473"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:elizabeth.hughes2@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_4">
+<div class="contact-cell">Denise Plourde</div>
+<div class="icon-container">
+<a class="icon" href="mailto:denise.plourde@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:9053303043"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:denise.plourde@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_5">
+<div class="contact-cell">Aseel Kaiser</div>
+<div class="icon-container">
+<a class="icon" href="mailto:aseel.kaiser@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:4167972807"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:aseel.kaiser@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_6">
+<div class="contact-cell">Sam Anderson</div>
+<div class="icon-container">
+<a class="icon" href="mailto:sam.anderson@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:9053303731"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:sam.anderson@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_7">
+<div class="contact-cell">Nick Fowler</div>
+<div class="icon-container">
+<a class="icon" href="mailto:nick.fowler@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:9054076750"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:nick.fowler@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_8">
+<div class="contact-cell">Leah Noordhof</div>
+<div class="icon-container">
+<a class="icon" href="mailto:leah.noordhof@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:9052202025"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:leah.noordhof@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_9">
+<div class="contact-cell">Yash Badlani</div>
+<div class="icon-container">
+<a class="icon" href="mailto:yash.badlani@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:2892081660"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:yash.badlani@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_10">
+<div class="contact-cell">Alisha Benjamin - IPC</div>
+<div class="icon-container">
+<a class="icon" href="mailto:alisha.benjamin@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:2899623540"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:alisha.benjamin@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_11">
+<div class="contact-cell">Dan Panko - Manager</div>
+<div class="icon-container">
+<a class="icon" href="mailto:dan.panko@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:6472160354"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:dan.panko@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+<div class="contact-row" id="contact_11">
+<div class="contact-cell">Tim Edwards - District Engineer</div>
+<div class="icon-container">
+<a class="icon" href="mailto:tim.edwards@ontario.ca"><i class="fa-solid fa-at"></i></a>
+<a class="icon" href="tel:9053308831"><i class="fa-solid fa-phone"></i></a>
+<a href="https://teams.microsoft.com/l/chat/0/0?users=mailto:tim.edwards@ontario.ca" target="_blank"><img alt="Teams" height="20" src="https://raw.githubusercontent.com/sean-roelofsen/YDHPTO-Region-Geojsons/main/TeamsIcon.png" width="20"/></a>
+<!-- <a href="your-team-link-here" class="icon"><i class="fa-solid fa-users"></i></a> -->
+</div>
+</div>
+</div>
+<div class="extra-info">
+<h3>Other contacts</h3>
+<!--<a href="tel:123-456-7890" class="icon"><i class="fa-solid fa-phone">YD-HP Water DutyLine</i></a>-->
+<p><a href="tel:9053198292">Halton-Peel DutyOfficer:905-319-8292</a></p>
+<p><b><a href="tel:9054275617">YD-TO-HP Water DutyLine:905-427-5617</a></b></p>
+<p><a href="tel:18002686063">SAC ERP#:800-268-6063</a></p>
+<p><a href="mailto:sac.moe.sac@ontario.ca">@MOE.SACemail </a></p>
+<p><a href="tel:4163263381">Toronto DutyOfficer:416-326-3381</a></p>
 
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <body>
-        <!--Added class row -->
-        <div class="page-container row">
-            <!---Added col-lg-4 class -->
-           <!-- Total 12 columns are divided into 3 parts as col-lg-4 -->
-            <div class="pricing-table col-lg-4">
-                <div class="pricing-table-header">
-                    
-                    <h3>&nbsp&nbsp<u>EO Contact List (click to send)</u></h3>
-                </div>
-                <div class="pricing-table-space"></div>
-                <div class="pricing-table-features">
-                    <p><a href="mailto:christelle.broux@ontario.ca">&nbsp@Christelle Broux</a> &nbsp &nbsp<a href="tel:2892085057">cell: 289-208-5057</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=christelle.broux@ontario.ca" target="_blank">Teams</a></p>
-                    <p><a href="mailto:elizabeth.hughes2@ontario.ca">&nbsp@Elizabeth Hughes</a> &nbsp &nbsp<a href="tel:2892081473">cell: 289-208-1473</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=elizabeth.hughes2@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:denise.plourde@ontario.ca">&nbsp@Denise Plourde</a> &nbsp &nbsp<a href="tel:9053303043">cell: 905-330-3043</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=denise.plourde@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:aseel.kaiser@ontario.ca">&nbsp@Aseel Kaiser</a>&nbsp&nbsp &nbsp &nbsp &nbsp<a href="tel:4167972807">cell: 416-797-2807</a>&nbsp&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=aseel.kaiser@ontario.ca" target="_blank">Teams</a></p></p>
-                    <!--<p><a href="mailto:trevor.machmer@ontario.ca">&nbsp@Trevor Machmer</a> &nbsp &nbsp<a href="tel:2892081473">cell: 289-208-1473</a>&nbsp&nbsp&nbsp
-                      <a href="https://teams.microsoft.com/l/chat/0/0?users=trevor.machmer@ontario.ca" target="_blank">Teams</a></p>-->
-                    <p><a href="mailto:sam.anderson@ontario.ca">&nbsp@Sam Anderson</a> &nbsp &nbsp &nbsp<a href="tel:9053303731">cell: 905-330-3731</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=sam.anderson@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:nick.fowler@ontario.ca">&nbsp@Nick Fowler</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp<a href="tel:9054076750">cell: 905-407-6750</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=nick.fowler@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:leah.noordhof@ontario.ca">&nbsp@Leah Noordhof</a>  &nbsp &nbsp<a href="tel:9052202025">cell: 905-220-2025</a>&nbsp&nbsp&nbsp
-                      <a href="https://teams.microsoft.com/l/chat/0/0?users=leah.noordhof@ontario.ca" target="_blank">Teams</a></p></p>
-                 <p><a href="mailto:yash.badlani@ontario.ca">&nbsp@Yash Badlani</a>  &nbsp &nbsp<a href="tel:2892081660">cell: 289-208-1660</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=yash.badlani@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:alisha.benjamin@ontario.ca">&nbsp@Alisha Benjamin</a>  &nbsp &nbsp<a href="tel:2899623540">cell: 289-962-3540</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=alisha.benjamin@ontario.ca" target="_blank">Teams</a></p></p>
-                    
-                    
-                    <p>&nbsp&nbsp---------------OTHER CONTACTS--------------------------</p>
-                    <p><a href="mailto:vincent.bulman@ontario.ca">&nbsp@Vincent Bulman</a> &nbsp &nbsp<a href="tel:4169917809">cell: 416-991-7809</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=vincent.bulman@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:dan.panko@ontario.ca">&nbsp@Dan Panko</a>&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp<a href="tel:6472160354">cell: 647-216-0354</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=dan.panko@ontario.ca" target="_blank">Teams</a></p></p>
-                    <!--<p><a href="mailto:tina.dufresne@ontario.ca">&nbsp@Tina Dufresne</a> &nbsp &nbsp &nbsp<a href="tel:2892423934">cell: 289-242-3934</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=tina.dufresne@ontario.ca" target="_blank">Teams</a></p></p>-->
-                    <p><a href="mailto:tim.edwards@ontario.ca">&nbsp@Tim Edwards</a> &nbsp &nbsp &nbsp<a href="tel:9053308831">cell: 905-330-8831</a>&nbsp&nbsp&nbsp
-                    <a href="https://teams.microsoft.com/l/chat/0/0?users=tim.edwards@ontario.ca" target="_blank">Teams</a></p></p>
-                    <p><a href="mailto:sac.moe.sac@ontario.ca">&nbsp@SAC-email </a> &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp<a href="tel:18002686063">SAC ERP Line: 800-268-6063</a></p>
-                    <p><a href="tel:9054275617">&nbspYD-HP-TO Water Duty Line: 905-427-5617</a></p>
-                    <p><a href="tel:9053198292">&nbspHalton-Peel Duty Officer: 905-319-8292</a></p>
-                    
-
-          
-
-                    </div>
-
-    </body>
-
+</div>
+</body>
 </html>
